@@ -1,0 +1,171 @@
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+} 
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #517A8F;
+  display: block;
+  margin: auto;
+  transition: width 0.15s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+nav .fa {
+  display: none;
+}
+
+.swiftrise__navbar-navlinks__mobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    background: #517A8F;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 0;
+  }
+
+  .swiftrise__navbar-navlinks__mobile-links li {
+    padding: 0;
+    font-size: small;
+  }
+
+  .swiftrise__navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  .swiftrise__navbar-navlinks {
+    display: none;
+  }
+
+  .swiftrise__navbar-navlinks__mobile{
+    display: flex;
+  }
+
+  .swiftrise__navbar-logo {
+    width: 150px;
+    position: relative;
+    transition: 0.6s;
+    background-color: transparent;
+  }
+
+  .swiftrise__navbar-navlinks__mobile {
+    background-color: transparent;
+    z-index: 1;
+    color: transparent;
+  }
+  
+  .swiftrise__navbar-navlinks__mobile-toggle {
+    width: 23px;
+    height: 23px;
+    object-fit: contain;
+    color: #fff;
+  }
+
+  .toggle__flex {
+    display: flex;
+    padding: 1.5rem;
+    position: absolute;
+    top: 5rem;
+    right: 0px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    min-width: 10px;
+    border-radius: 0.75rem;
+    background: linear-gradient(to bottom, #000000, #1a202c);
+  }
+
+  .toggle__hidden {
+    display: none;
+  }
+
+  .swiftrise__navbar-navlinks__mobile-links {
+    /* position: inherit; */
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+    background-color: transparent;
+  }
+
+  .swiftrise__navbar-navlinks__mobile-links a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .mr-0 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 0px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .mb-4 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+  }
+}

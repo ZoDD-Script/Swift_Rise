@@ -1,0 +1,37 @@
+.swiftrie__clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.swiftrie__clients-logo__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.swiftrie__clients-logo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0%;
+  min-width: 120px;
+}
+
+.swiftrie__clients-logo {
+  width: 100px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .swiftrie__clients-logo__container {
+    min-width: 192px;
+  }
+
+  .swiftrie__clients-logo {
+    width: 192px;
+  }
+}
