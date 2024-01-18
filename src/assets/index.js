@@ -23,7 +23,8 @@ import facebook from "./facebook.png";
 import twitter from "./twitter.png";
 import linkedin from "./linkedin.png";
 import instagram from "./instagram.png";
-
+import whatsappIcon from "./whatsapp.png";
+import user from "./user.png";
 
 export {
   about,
@@ -51,4 +52,6 @@ export {
   twitter,
   linkedin,
   instagram,
+  whatsappIcon,
+  user,
 };
